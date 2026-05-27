@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-principal: rgb(247, 114, 60);
+    --color-secundaria: rgb(231, 102,9);
+    --fuente-principal: "Akt", sans-serif;
+}
+
+body{
+    /*esto es para que 1rem equivalga a 16px*/
+    font-size: 62.5%;
+}
+
+/*estilo del header */
+.header{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    background-color: var(--color-principal);
+
+}
+
+.header h1{
+    font-family: var(--fuente-principal);
+    font-size: 2rem;
+    margin: 0 50px;
+}
+
+.header h1::before{
+    content: '';
+    position: absolute;
+    left:150px;
+    top: -40px;
+    background-image: url(../img/kemi1.jpg);
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header .search{
+    width: 400px;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.header .search input[type="search"]{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 6px;
+}
+
+.contenedor-iconos {
+    display: flex;
+    align-items: center;
+    gap: 30px;                     
+}
+
+.contenedor-iconos .material-symbols-outlined {
+    font-size: 26px;                
+    color: #333333;                 
+    cursor: pointer;                
+    user-select: none;              
+    transition: color 0.2s ease; 
+}   
+
+.contenedor-iconos .material-symbols-outlined:hover {
+    color: #d32f2f;                 
+}
+
+
+.contenedor-iconos span:not(.material-symbols-outlined) {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333333;
+    cursor: pointer;
+}
+
+
+.contenedor-iconos span:hover {
+    text-decoration: none;
+}
+
+.contenedor-iconos span{
+    font-size: 2rem;
+    color: white;
+    font-weight: 900;
+    margin-left: 10PX;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100% ;
+    height: 2rem;
+    background-color: var(--color-secundaria);
+}
+
+.nav a{
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: var(--fuente-principal);
+    font-weight: 500;
+    color: white;
+    transition: background-color 1s ease;
+}
+
+.nav a:hover{
+    background-color: var(--color-principal);
+    padding: 1px 2px 1px 2px;
+    border-radius: 10px ;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    width: 90%;
+    background-color: whitesmoke;
+    margin: 0 auto;
+}
+
+
+.contenedor .contenedor-tarjetas{
+    width: 325px;
+    height: 425px;
+    margin-top: 10px;
+    border-radius: 20px;
+    margin-top: 60px;   
+    
+}
+
+.contenedor .contenedor-tarjetas:hover{
+    cursor: pointer;
+}
+
+.contenedor .contenedor-tarjetas img{
+    width: 60%;
+    height: 60%;
+    margin: 0 60px;
+    border-radius: 10px;
+}
+
+.contenedor .contenedor-tarjetas .telefono{
+font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+
+
+
+
